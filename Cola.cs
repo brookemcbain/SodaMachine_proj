@@ -12,5 +12,12 @@ namespace Soda_Machine
             name = "Cola";
             cost = .35; 
         }
+        public double Cost
+        {
+            get
+            {
+                return cost;
+            }
+        }
     }
 }

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Soda_Machine
 {
-    class Quarters
+    class Quarters : Coin
     {
+        
+        public Quarters(double valueOfCoin)
+        {
+            name = "Quarter";
+            this.valueOfCoin = valueOfCoin;   
+        }
     }
 }

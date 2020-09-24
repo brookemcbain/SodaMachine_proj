@@ -6,12 +6,18 @@ namespace Soda_Machine
 {
     class OrangeSoda : Can
     {
+        
         public OrangeSoda()
         { 
-            
             name = "Orange Soda";
-            cost = .6; 
 
+        }
+        public double Cost
+        {
+            get
+            {
+                return cost;          
+            }
         }
     }
 }

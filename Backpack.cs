@@ -10,6 +10,11 @@ namespace Soda_Machine
         
         public Backpack()
         {
+            OrangeSoda orangeSodaSelected = new OrangeSoda();
+            Cola cocaColaSelected = new Cola();
+            RootBeer rootBeerSelected = new RootBeer();
+
+            cansInBackPack = new List<Can>(); 
 
         }
     

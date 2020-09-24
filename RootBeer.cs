@@ -12,5 +12,12 @@ namespace Soda_Machine
             name = "Root Beer";
             cost = .60;  
         }
+        public double Cost
+        {
+            get
+            {
+                return cost;
+            }
+        }
     }
 }

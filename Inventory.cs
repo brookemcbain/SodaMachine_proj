@@ -6,5 +6,13 @@ namespace Soda_Machine
 {
     class Inventory
     {
+        //variables 
+        
+
+        public Inventory()
+        {
+
+        }
+        //member methods 
     }
 }

@@ -11,7 +11,6 @@ namespace Soda_Machine
         public List<Coin> register;
         public List<Can> inventory;
 
-         
         public SodaMachine()
         {
             OrangeSoda orangeSoda = new OrangeSoda();
@@ -23,10 +22,36 @@ namespace Soda_Machine
             inventory.Add(orangeSoda);
             inventory.Add(cocaCola);
             inventory.Add(rootBeer);
+            inventory.Add(orangeSoda);
+            inventory.Add(orangeSoda);
+            inventory.Add(cocaCola);
+            inventory.Add(cocaCola);
+            inventory.Add(cocaCola);
+            inventory.Add(cocaCola);
+            inventory.Add(rootBeer);
+            inventory.Add(rootBeer);
+            inventory.Add(rootBeer);
+            inventory.Add(rootBeer);
 
+            Quarters quartersInRegister = new Quarters(5.00);
+            Dimes dimesInRegister = new Dimes(1.00);
+            Nickels nickelsInRegister = new Nickels(1.00);
+            Pennies penniesInRegister = new Pennies(0.50);
 
+            register = new List<Coin>();
+
+            register.Add(quartersInRegister);
+            register.Add(dimesInRegister);
+            register.Add(nickelsInRegister);
+            register.Add(penniesInRegister);
+
+            inventory.ForEach(Console.WriteLine);  
         }
-        //member methods
-       
+        public void ItemsInRegister()
+        {
+      
+            
+        }
+ 
     }
 }
