@@ -6,10 +6,10 @@ namespace Soda_Machine
 {
     class Nickels : Coin
     {
-       public Nickels(double valueOfCoin)
+       public Nickels()
         {
             name = "Nickel";
-            this.valueOfCoin = valueOfCoin;  
+            valueOfCoin = .05; 
 
         }
 

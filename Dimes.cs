@@ -6,10 +6,10 @@ namespace Soda_Machine
 {
     class Dimes : Coin
     {
-        public Dimes(double valueOfCoin)
+        public Dimes()
         {
             name = "Dime";
-            this.valueOfCoin = valueOfCoin; 
+            valueOfCoin = .10; 
         }
     }
 }

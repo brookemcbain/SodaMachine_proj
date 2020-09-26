@@ -6,13 +6,14 @@ namespace Soda_Machine
 {
     abstract class Can
     {
-        public double cost;
+        protected double cost;
+        public double Cost { get { return cost; } set { Cost = cost; } }
         public string name;
+
 
         public Can()
         {
-
+            
         }
-        
     }   
 }

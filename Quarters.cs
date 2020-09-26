@@ -7,10 +7,11 @@ namespace Soda_Machine
     class Quarters : Coin
     {
         
-        public Quarters(double valueOfCoin)
+        public Quarters()
         {
             name = "Quarter";
-            this.valueOfCoin = valueOfCoin;   
+            valueOfCoin = .25; 
+             
         }
     }
 }

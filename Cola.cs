@@ -7,17 +7,10 @@ namespace Soda_Machine
     class Cola : Can
     {
         public Cola()
-        {
-            
+        {   
             name = "Cola";
             cost = .35; 
         }
-        public double Cost
-        {
-            get
-            {
-                return cost;
-            }
-        }
+       
     }
 }

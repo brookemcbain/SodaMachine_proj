@@ -8,16 +8,11 @@ namespace Soda_Machine
     {
         
         public OrangeSoda()
-        { 
+        {
             name = "Orange Soda";
+            cost = .06; 
 
         }
-        public double Cost
-        {
-            get
-            {
-                return cost;          
-            }
-        }
+    
     }
 }

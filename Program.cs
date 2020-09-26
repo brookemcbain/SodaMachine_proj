@@ -6,11 +6,8 @@ namespace Soda_Machine
     {
         static void Main(string[] args)
         {
-            SodaMachine sodaMachine = new SodaMachine();
-            Console.WriteLine(sodaMachine); 
-
-
-      
+            Customer customer = new Customer(); 
+          
         }
     }
 }
