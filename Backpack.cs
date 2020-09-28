@@ -6,18 +6,31 @@ namespace Soda_Machine
 {
     class Backpack
     {
-        public List<Can> cansInBackPack; 
-        
+        public List<Can> cansInBackPack = new List<Can>();
+        Can orangeSoda = new OrangeSoda();
+        Can cocaCola = new Cola();
+        RootBeer rootBeer = new RootBeer();
         public Backpack()
         {
-            OrangeSoda orangeSodaSelected = new OrangeSoda();
-            Cola cocaColaSelected = new Cola();
-            RootBeer rootBeerSelected = new RootBeer();
+           
 
-            cansInBackPack = new List<Can>(); 
+            
 
         }
-    
+        public void AddOrangeSoda()
+        {
+            cansInBackPack.Add(orangeSoda); 
+        }
+        public void AddCocaCola()
+        {
+            cansInBackPack.Add(cocaCola); 
+        }
+        public void AddRootBeer()
+        {
+            cansInBackPack.Add(rootBeer); 
+        }
+        
+
     }
         
 }

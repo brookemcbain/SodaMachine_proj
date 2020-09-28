@@ -40,9 +40,12 @@ namespace Soda_Machine
             }
 
         }
-        public void DisplayQuarters()
+        public void DisplayCoins()
         {
-            int amountOfQuarters = 0; 
+            int amountOfQuarters = 0;
+            int amountOfDimes = 0;
+            int amountOfNickels = 0;
+            int amountOfPennies = 0; 
 
             foreach (Coin coin in coins)
             {
@@ -51,28 +54,16 @@ namespace Soda_Machine
                     amountOfQuarters++;
                 }
             }
-
             Console.WriteLine("Quarters: $" + amountOfQuarters);
-        }
-        public void DisplayDimes()
-        {
-            int amountOfDimes = 0;
-            
+
+            foreach (Coin coin in coins)
             {
-                foreach (Coin coin in coins)
+                if (dimes.name == "Dime")
                 {
-                    if(dimes.name == "Dime")
-                    {
-                        amountOfDimes++; 
-                    }
+                    amountOfDimes++;
                 }
-            
-                Console.WriteLine("Dimes: $" + dimes.ValueOfCoin); 
             }
-        }
-        public void DisplayNickels()
-        {
-            int amountOfNickels = 0;
+            Console.WriteLine("Dimes: $" + dimes.ValueOfCoin);
 
             foreach (Coin coin in coins)
             {
@@ -81,13 +72,8 @@ namespace Soda_Machine
                     amountOfNickels++;
                 }
             }
-
             Console.WriteLine("Nickels: $" + amountOfNickels);
-        }
-        public void DisplayPennies()
-        {
-            int amountOfPennies = 0;
-
+           
             foreach (Coin coin in coins)
             {
                 if (pennies.name == "Penny")
@@ -95,7 +81,6 @@ namespace Soda_Machine
                     amountOfPennies++;
                 }
             }
-
             Console.WriteLine("Pennies: $" + amountOfPennies);
         }
         public void RemoveQuarter()

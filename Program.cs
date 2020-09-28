@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Soda_Machine
 {
@@ -6,7 +7,11 @@ namespace Soda_Machine
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer(); 
+
+
+            Simulation simulation = new Simulation(); 
+
+
           
         }
     }

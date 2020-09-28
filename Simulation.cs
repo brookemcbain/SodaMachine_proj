@@ -12,6 +12,16 @@ namespace Soda_Machine
         public double pennies = 50;
 
         SodaMachine sodaMachine = new SodaMachine();
-        Customer customer = new Customer(); 
-    }
+        Customer customer = new Customer();
+
+        public Simulation()
+        {
+            User_Interface.SodaList();
+
+            User_Interface.CoinList();
+            Customer customer = new Customer(); 
+
+            
+        }
+    }       
 }

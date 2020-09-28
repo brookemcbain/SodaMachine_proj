@@ -45,7 +45,7 @@ namespace Soda_Machine
             }
        
         }
-        public void AmountOfOrangeSodaInSodaMachine()
+        public void DisplayAmountOfSodas()
         {
             int numberOfOrangeSodas = 0;
             int numberOfCocaColas = 0;
@@ -73,7 +73,12 @@ namespace Soda_Machine
                     numberOfRootBeers++;
                 }
             }
+
+            Console.WriteLine("There are" + numberOfOrangeSodas); 
+            Console.WriteLine("There are" + numberOfCocaColas);
+            Console.WriteLine("There are" + numberOfRootBeers); 
         }
+
         public void RemoveOrangeSoda()
         {
             inventory.Remove(orangeSoda);
